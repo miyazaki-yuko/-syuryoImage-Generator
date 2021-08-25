@@ -3,5 +3,5 @@
 終・制作著作画面を作れる生成器をp5.jsで作りました。
 好きな番組名や自分の名前を入れられます。
 
-
-[githubpagesのリンク](https://miyazaki-yuko.github.io/syuryoImageGenerator/)
+github pagesのリンク
+[https://miyazaki-yuko.github.io/syuryoImageGenerator/](https://miyazaki-yuko.github.io/syuryoImageGenerator/)
