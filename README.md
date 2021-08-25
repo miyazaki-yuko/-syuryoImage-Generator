@@ -4,4 +4,4 @@
 好きな番組名や自分の名前を入れられます。
 
 
-[githubpages](https://miyazaki-yuko.github.io/syuryoImageGenerator/)
+[githubpagesのリンク](https://miyazaki-yuko.github.io/syuryoImageGenerator/)
