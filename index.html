@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>終了画像生成器</title>
   <script src="p5.js"></script>
   <script src="p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,14 +19,37 @@
 </head>
 
 <body>
+  <div class="container-sm" id="container">
+    <h1 class="display">番組終了画面生成器</h1>
+    <hr>
+
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="subject" onInput="setText()" placeholder="科目名を入力してください"
+        aria-label="Recipient's username" aria-describedby="button-addon2" value="科目名を入力">
+      <input type="text" class="form-control" id="name" onInput="setText()" placeholder="名前を入力してください"
+        aria-label="Recipient's username" aria-describedby="button-addon2" value="名前を入力">
+      <button class="btn btn-outline-secondary" type="button" onClick="saveImage()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
+          viewBox="0 0 16 16">
+          <path
+            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+          <path
+            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+        </svg>
+        Download</button>
+    </div>
+
+
+    <hr>
+    <div id="canvas"></div>
+    <hr>
+    <footer>
+      <p class="text-center">ここにコピーライトを入れよう</p>
+    </footer>
+  </div>
+
   <script src="sketch.js"></script>
-  <p>科目名を入力してください</p>
-  <input type="text" id="subject" onInput="setText()" placeholder="プロトタイピング基礎">
-  <p>名前を入力してください</p>
-  <input type="text" id="name" onInput="setText()" placeholder="IA"><br>
-  <input type="button" value="Download" onclick="saveImage()">
-
-
 </body>
 
 </html>
