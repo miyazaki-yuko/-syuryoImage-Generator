@@ -15,9 +15,13 @@ function setup() {
 
   pixelDensity(2.0);
   // container の横幅を取得する
-  var width = document.getElementById("container").clientWidth;
-  var c = createCanvas(width, width * 9 / 16);
-  c.parent(document.getElementById("canvas"));
+
+
+  var width_container = document.getElementById("canvas").clientWidth;
+  var mycanvas = createCanvas(width_container, width_container * 9 / 16);
+  mycanvas.parent("canvas");
+
+
 
   name = "IA";
   subject = "プロトタイピング基礎";
@@ -84,4 +88,9 @@ function setText() {
 
 function saveImage() {
   save("end.png");
+}
+
+function windowResized() {
+  var width_container = document.getElementById("canvas").clientWidth;
+  resizeCanvas(width_container, width_container * 9 / 16);
 }
